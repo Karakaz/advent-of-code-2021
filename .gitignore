@@ -1,0 +1,10 @@
+.gradle/
+.idea/
+build/
+
+*.class
+*.jar
+*.zip
+*.tar.gz
+
+!gradle/wrapper/gradle-wrapper.jar
