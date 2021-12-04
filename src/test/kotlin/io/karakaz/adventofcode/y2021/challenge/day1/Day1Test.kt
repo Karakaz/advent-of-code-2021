@@ -1,9 +1,5 @@
-package io.karakaz.adventofcode.y2021.challenge
+package io.karakaz.adventofcode.y2021.challenge.day1
 
-import io.karakaz.adventofcode.y2021.challenge.day1.numberOfIncreases
-import io.karakaz.adventofcode.y2021.challenge.day1.numberOfIncreasesRefinedSolution
-import io.karakaz.adventofcode.y2021.challenge.day1.numberOfIncreasesSlidingWindowOf3
-import io.karakaz.adventofcode.y2021.challenge.day1.numberOfIncreasesSlidingWindowOf3RefinedSolution
 import io.karakaz.adventofcode.y2021.util.readFileAsLines
 import mu.KotlinLogging
 import org.junit.jupiter.api.Assertions.assertEquals

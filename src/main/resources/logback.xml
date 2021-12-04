@@ -5,7 +5,7 @@
         </encoder>
     </appender>
 
-    <logger name="io.karakaz" level="info"/>
+    <logger name="io.karakaz" level="debug"/>
 
     <root level="info">
         <appender-ref ref="STDOUT" />
