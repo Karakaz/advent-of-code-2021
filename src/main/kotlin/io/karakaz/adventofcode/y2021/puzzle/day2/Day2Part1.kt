@@ -1,4 +1,4 @@
-package io.karakaz.adventofcode.y2021.challenge.day2
+package io.karakaz.adventofcode.y2021.puzzle.day2
 
 import io.karakaz.adventofcode.y2021.util.readFileAsLines
 import mu.KotlinLogging
