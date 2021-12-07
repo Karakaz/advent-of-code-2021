@@ -12,10 +12,11 @@ class BitsFilterer(numberOfBits: Int) {
             .map { twoToThePowerOf(it) }
 
     fun filterBits(ints: List<Int>, index: Int, comparator: (Int, Int) -> Boolean): List<Int> {
-        val groups = ints.groupBy { it.and(masks[index]) > 0 }
-        val trueGroup = groups[true] ?: listOf()
-        val falseGroup = groups[false] ?: listOf()
-        return if (comparator(trueGroup.size, falseGroup.size)) trueGroup else falseGroup
+        val (truePartition, falsePartition) = ints.partition { it.and(masks[index]) > 0 }
+        return when (comparator(truePartition.size, falsePartition.size)) {
+            true -> truePartition
+            false -> falsePartition
+        }
     }
 }
 
