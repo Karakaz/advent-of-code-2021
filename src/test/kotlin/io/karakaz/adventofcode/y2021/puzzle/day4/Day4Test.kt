@@ -24,4 +24,14 @@ internal class Day4KtTest {
         logger.info { "Score: $score" }
         assertEquals(1924, score)
     }
+
+    @Test
+    internal fun calculateScoreOfWinningAndLosingBoardsTest() {
+        val input = readFileAsLines("day4/bingo-trial.txt")
+        val (winningScore, losingScore) = calculateScoreOfWinningAndLosingBoards(input)
+        logger.info { "Winning score: $winningScore" }
+        logger.info { "Losing score: $losingScore" }
+        assertEquals(4512, winningScore)
+        assertEquals(1924, losingScore)
+    }
 }
